@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /*authenticate the user and return the token*/
 router.post('/authenticate', function(req,res,next){
-  let UserCtrl = require('../controllers/userctrl.js');
+  let UserCtrl = require('../controllers/usersctrl.js');
 
   UserCtrl.authenticate(req,res);
 });
